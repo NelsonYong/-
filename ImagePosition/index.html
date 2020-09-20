@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../Js/jquery.min.js"></script>
+  <link rel ='stylesheet' href='./css/base.css'>
+  <link rel ='stylesheet' href='./css/layui.css'>
+</head>
+
+<body>
+  <div>
+    <div class="input">图片名称:<input type="text" id="id_name" placeholder="avatrs" value="avatrs" class="layui-input"></div>
+    <input type="file" id="file" onchange="getImgURL(this)" >
+    <button id="filebtn" class="layui-btn">上传文件</button>
+    <span id="result">返回结果:</span>
+
+    <div>
+      <h3>预览</h3>
+      <div id="show">
+        <div class="mark"></div>
+      </div>
+    </div>
+
+    <div class="res">
+      <h3>结果</h3>
+      <div id="show1">
+        <div class="mark1"></div>
+      </div>
+    </div>
+  </div>
+  </form>
+
+  <script>
+
+    var pre_h=null
+    var pre_w=null
+
+  </script>
+
+  <script src="./js/GetImageUrl.js"></script>
+  <script src="./js/PushImageForm.js"></script>
+  <script src="./js/ImageSize.js"></script>
+  
+</body>
+
+</html>

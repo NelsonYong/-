@@ -1,0 +1,68 @@
+
+html{
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+*{
+  padding:0;
+  margin:0;
+}
+
+.input{
+  width: 15%;
+}
+
+#file{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#show{
+  width: 50rem;
+  height: 31.25rem;
+  border: 0.0625rem solid red;
+}
+#show1 {
+  width: 50rem;
+  height: 31.25rem;
+  border: 0.0625rem solid red;
+
+}
+/* #show1 {
+  width: 50rem;
+  height: 31.25rem;
+  
+} */
+
+.mark, .mark1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* #show img {
+  width: 300px;
+  height: 100%;
+}
+#show1 img {
+  width: 100%;
+  height: 100%;
+} */
+
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.main div:first-child {
+  margin-right: 6.125rem;
+}
+
+.res{
+  position: absolute;
+  left:  700px;
+  top: 150px;
+}
+
+.disable{
+  display: none;
+}
