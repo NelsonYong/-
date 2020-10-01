@@ -30,20 +30,15 @@
   function creatImg(imgRUL) { //根据指定URL创建一个Img对象
     RemoveChild()
     let textHtml = "<img src='" + imgRUL + "'/>";
-    $(".mark").append(textHtml);
-    $(".mark1").append(textHtml);
+    localImage=textHtml
+    $(".mark").append(localImage);
+   
      //获取容器宽高
      ImageSize()
-
-    let result = document.getElementsByClassName('mark1')[0];
-    result.classList.add('disable')
-
-   
-
   }
 
 
   function RemoveChild() {
     $(".mark").empty()
-    $(".mark1").empty()
+    $(".res").empty()
   }

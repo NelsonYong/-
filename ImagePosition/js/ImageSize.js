@@ -35,48 +35,24 @@ function ComputeSize(con, child) {
   const child_pre=child.width/child.height
   const con_pre=con.width/con.height
 
+  //计算图片缩放比例
   if(child_pre>con_pre){
 
     SetImagesize( con.width,(con.width*child.height)/child.width)
-
-    // $(".mark").children('img').css({
-    //   'width': con.width+'px',
-    //   'height':(con.width*child.height)/child.width+'px'
-    // })
-    // $(".mark1").children('img').css({
-    //   'width': con.width+'px',
-    //   'height':(con.width*child.height)/child.width+'px'
-    // })
-
     ComputePre(con.width/child.width,((con.width*child.height)/child.width)/child.height)
   }
 
  
 
   if(child_pre==con_pre){
-    // $(".mark").children('img').css({
-    //   'width': con.width+'px',
-    //   'height':con.height+'px'
-    // })
-    // $(".mark1").children('img').css({
-    //   'width': con.width+'px',
-    //   'height':con.height+'px'
-    // })
-
+   
     SetImagesize( con.width,con.height)
     ComputePre(con.width/child.width,con.height/child.height)
 
   }
   if(child_pre<con_pre){
 
-    // $(".mark").children('img').css({
-    //   'height': con.height+'px',
-    //   'width':(con.height/child.height)*con.width+'px'
-    // })
-    // $(".mark").children('img').css({
-    //   'height': con.height+'px',
-    //   'width':(con.height/child.height)*con.width+'px'
-    // })
+   
     SetImagesize((child.width/child.height)*con.height,con.height)
     ComputePre(((child.width/child.height)*con.height)/child.width,con.height/child.height)
 
